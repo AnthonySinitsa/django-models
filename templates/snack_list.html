@@ -3,6 +3,6 @@
 {% block content %}
 <h1>Snack List</h1>
 {% for snack in snacks %}
-<p><a href="{% url 'snack_detail' thing.pk %}">{{ snack.name }}</a></p>
+<p><a href="{% url 'snack_detail' snack.pk %}">{{ snack.name }}</a></p>
 {% endfor %}
 {% endblock content %}

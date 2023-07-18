@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section>
-  <h2>Snack Name: {{ snack.name }}</h2>
-  <p>Snack Purchased: {{ snack.purchaser}}</p>
-  <p>Snack Description: {{ snack.description}}</p>
-</section>
+<h1>Snack Detail</h1>
+<p>Name: {{ snack.name }}</p>
+<p>Description: {{ snack.description }}</p>
+<p>Purchaser: {{ snack.purchaser }}</p>
 {% endblock content %}
